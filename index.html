@@ -3,40 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de recolección de aguas lluvias</title>
+    <title>Sistema de Recolección de Aguas Lluvias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Evita el scroll */
+        }
+        .full-screen {
+            height: 100vh; /* Ocupa toda la pantalla */
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex-grow: 1; /* Permite que el contenido crezca sin empujar el footer */
+            min-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .img-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen sin distorsión */
+        }
+        footer {
+            height: auto;
+            flex-shrink: 0; /* Asegura que el footer no se reduzca */
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <img src="./assets/sombrero.png" alt="">
-            <img src="./assets/agua.png" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Contexto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ubicación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sistema</a></li>
-                </ul>
+    <div class="full-screen">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="./assets/sombrero.png" alt="">
+                <img src="./assets/agua.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contexto.html">Contexto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/ubicacion.html">Ubicación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/sistema.html">Sistema</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <div class="img-container">
+                <img src="./assets/portada.jpeg" alt="Sistema de recolección de aguas lluvias en Aguazul">
+                <div class="overlay">
+                    <h1 class="fs-3">Sistema de recolección de aguas lluvias en Aguazul, Casanare</h1>
+                    <p class="lead">
+                        En el presente instructivo se pretende presentar una propuesta de un sistema
+                        de recolección de aguas lluvias para el municipio de Aguazul en el departamento
+                        de Casanare.
+                    </p>
+                    <button class="btn btn-primary"><a class="nav-link" href="pages/contexto.html">Empezar</a></button>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    <div class="container text-center mt-5">
-        <h1>Sistema de recolección de aguas lluvias en Aguazul, Casanare</h1>
-        <p class="lead">
-            En el presente instructivo se pretende presentar una propuesta de un sistema
-            de recolección de aguas lluvias para el municipio de Aguazul en el departamento
-            de Casanare. </p>
-        <button class="btn btn-primary">Empezar</button>
+
+        <footer class="bg-dark text-white text-center">
+            <p>&copy; 2025. Todos los derechos reservados.</p>
+        </footer>
     </div>
-    
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2025 Mi Proyecto. Todos los derechos reservados.</p>
-    </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
