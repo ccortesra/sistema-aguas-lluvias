@@ -9,8 +9,11 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img src="../assets/sombrero.png" alt="">
-            <img src="../assets/agua.png" alt="">
+            <a href="../index.html">
+                <img src="../assets/sombrero.png" alt="">
+                <img src="../assets/agua.png" alt="">
+            </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,15 +34,14 @@
             En el presente instructivo se pretende presentar una propuesta de un sistema
             de recolección de aguas lluvias para el municipio de Aguazul en el departamento
             de Casanare. </p>
-        <button class="btn btn-primary">Empezar</button>
     </div>
     
 
     <div class="container mt-5">
         <h3>1. Componentes del sistema</h3>
-        <div class="row">
+        <div class="row justify-content-center">
                 <div class="col-xl-4">
-                    <div class="card m-5" style="width: 25rem;">
+                    <div class="card m-5 mx-auto" style="width: 20rem;">
                         <img src="../assets/techo.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Superficie de captación</h5>
@@ -51,11 +53,11 @@
                                 La superficie de captación fácilmente puede ser la cubierta de la vivienda, en la que se recomienda realizar una limpieza o lavado previamente al montaje del sistema con el fin de eliminar residuos que contaminen el agua.
 
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                         
                         </div>
                     </div>
 
-                    <div class="card m-5" style="width: 25rem;">
+                    <div class="card m-5 mx-auto" style="width: 20rem;">
                         <img src="../assets/CANALETAS.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Canaletas y bajantes</h5>
@@ -67,12 +69,12 @@
                             Instalación de bajantes: Conectar las canaletas a tuberías verticales que dirijan el agua hacia el filtro de primeras lluvias o directamente a un tanque recolector.
 
                           </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                       
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <div class="card m-5" style="width: 25rem;">
+                    <div class="card m-5 mx-auto" style="width: 20rem;">
                         <img src="../assets/filtro.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Filtro de primeras lluvias</h5>
@@ -84,11 +86,11 @@
 
 
                           </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                         
                         </div>
                     </div>
 
-                    <div class="card m-5" style="width: 25rem;">
+                    <div class="card m-5 mx-auto" style="width: 20rem;">
                         <img src="../assets/tanque.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Tanque de almacenamiento</h5>
@@ -98,7 +100,8 @@
                             Consideraciones:
                             Capacidad: Para calcular la capacidad de almacenamiento se requiere de 2 aspectos fundamentales, la precipitación y el área de recolección:
                         </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExample">Información adicional</a>
+
                         </div>
                     </div>
                 </div>
@@ -106,7 +109,7 @@
                 
 
                 <div class="col-xl-4">
-                    <div class="card m-5" style="width: 25rem;">
+                    <div class="card m-5 mx-auto" style="width: 20rem;">
                         <img src="../assets/tuberias.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Sistema de distribución</h5>
@@ -116,7 +119,7 @@
                             Construcción:
                             Instalación: Conectar el tanque a las áreas de consumo mediante tuberías, puede incorporar llaves de paso para controlar el flujo.
                           </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+            
                         </div>
                     </div>        
                 </div>    
@@ -127,11 +130,11 @@
     <div class="container mt-5">
         <h3>2. Mantenimiento del sistema</h3>
         <ol>
-            <li>Superficie de captación: Limpiar periódicamente para remover hojas y desechos.</li>
-            <li>Canaletas y bajantes: Verificar y limpiar obstrucciones regularmente.</li>
-            <li>Filtro de primeras lluvias: Asegurar su correcto funcionamiento y limpiar según sea necesario.</li>
-            <li>Tanque de almacenamiento: Realizar limpieza interna cada seis meses y revisar la integridad estructural.</li>
-            <li>Sistema de distribución: Inspeccionar conexiones y reparar fugas inmediatamente.</li>
+            <li><b>Superficie de captación:</b> Limpiar periódicamente para remover hojas y desechos.</li>
+            <li><b>Canaletas y bajantes:</b> Verificar y limpiar obstrucciones regularmente.</li>
+            <li><b>Filtro de primeras lluvias:</b> Asegurar su correcto funcionamiento y limpiar según sea necesario.</li>
+            <li><b>Tanque de almacenamiento:</b> Realizar limpieza interna cada seis meses y revisar la integridad estructural.</li>
+            <li><b>Sistema de distribución:</b> Inspeccionar conexiones y reparar fugas inmediatamente.</li>
         </ol>
 
         <p>
@@ -143,6 +146,36 @@
         <p>&copy; 2025. Todos los derechos reservados.</p>
     </footer>
     
+    <!-- Modal -->
+    <div class="modal fade" id="modalExample" tabindex="-1" aria-labelledby="modalExampleLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalExampleLabel">Información Adicional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>Para la zona del piedemonte a la que se destina la propuesta, la estación màs cercana del IDEAM es la del aeropuerto Yopal, se descarga el consolidado de datos de precipitación total diaria del año 2024, para estimar un volumen que medianamente se adecue a las condiciones, se toman los valores de precipitación total diaria máxima de cada mes del año 2024, y a estos 12 datos se les determina el promedio. Esto nos da un valor de 62.06 mm.</li>
+                        <li>Considerando que 1 mm de lluvia equivale a 1 litro de agua en 1 m2: 62 mm de lluvia equivalen a 62 litros de agua en 1 m2, por aproximación se recomienda entonces multiplicarse 60 por el área del techo de la vivienda a la que se implementará el sistema y esto nos indicará el número de litros que se podrán recoger diariamente en promedio.</li>
+                    </ol>
+                    
+                    <p><b>ES DE CONSIDERAR QUE LA CAPACIDAD CALCULADA PREVIAMENTE ES UN ESTIMATIVO CON LIMITACIONES NATURALES.</b></p>
+                    
+                    
+                    <p><b>Ubicación:</b> Situar en un lugar sombreado y elevado para facilitar la distribución por gravedad.</p>
+                    
+                    <p><b>Protección:</b> Cubrir el tanque para evitar la entrada de contaminantes y proliferación de mosquitos.</p>
+                    
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
