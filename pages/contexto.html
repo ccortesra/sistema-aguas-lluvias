@@ -9,25 +9,46 @@
         html {
             scroll-behavior: smooth;
         }
+        
+        /* Evitar desbordamiento horizontal */
+        body {
+            overflow-x: hidden;
+        }
+        
         .hero {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 50px 0;
+            flex-direction: row;
         }
         .hero:nth-child(even) {
             flex-direction: row-reverse;
         }
         .hero img {
-            width: 40%;
+            width: 100%;
+            max-width: 400px;
             height: auto;
             object-fit: cover;
             border-radius: 10px;
         }
         .hero-content {
-            width: 50%;
+            width: 100%;
+            max-width: 600px;
             padding: 20px;
-            text-align: left;
+            text-align: center;
+        }
+
+        /* Diseño responsivo en móviles */
+        @media (max-width: 767px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero img {
+                width: 90%;
+                max-width: 350px;
+            }
         }
     </style>
 </head>
@@ -81,7 +102,7 @@
         </div>
 
         <div id="caracteristicas" class="hero">
-            <img src="../assets/amenazas.jpg" alt="Características físicas">
+            <img src="../assets/caracteristicas_fisicas.jpg" alt="Características físicas">
             <div class="hero-content">
                 <h2>Características físicas</h2>
                 <p>
@@ -100,14 +121,11 @@
                 <p>
                     El área municipal se encuentra expuesta a diferentes amenazas a consecuencia de fenómenos naturales como inundaciones,
                     deslizamientos, sismos, avalanchas e incendios forestales y fenómenos de origen antrópico, deslizamientos, incendios,
-                    inundaciones ,violencia, accidentes, todas las cuales originan riesgos para el medio ambiente, ecosistemas, bosques,
+                    inundaciones, violencia, accidentes, todas las cuales originan riesgos para el medio ambiente, ecosistemas, bosques,
                     corrientes de agua y para los asentamientos humanos, viviendas, carreteras, redes de servicios públicos, cultivos, animales, etc.
-
                 </p>
-                
             </div>
         </div>
-        
     </div>
     
     <footer class="bg-dark text-white text-center py-3 mt-5">
